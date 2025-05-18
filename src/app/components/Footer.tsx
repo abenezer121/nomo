@@ -154,7 +154,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white">
-                  Кар'єра
+                  Карєра
                 </a>
               </li>
               <li>

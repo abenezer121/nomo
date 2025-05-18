@@ -1,10 +1,8 @@
 'use client'
 import React from 'react'
-
-
 import Image from 'next/image'
 import { useState } from 'react'
-
+import Link from "next/link";
 const LanguageDropDown = () => {
   const [isDropdownVisible, setIsDropDownVisible] = useState(false)
 
@@ -68,32 +66,32 @@ const Header: React.FC = () => {
 
       <ul className="flex flex-col items-start gap-[38px] font-bold md:flex md:space-y-0 lg:flex-row lg:items-center">
         <li>
-          <a className="text-orange-500 hover:text-orange-500" href="/cashback">
+          <Link className="text-orange-500 hover:text-orange-500" href="/cashback">
             Кешбек
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="transition-colors hover:text-orange-500" href="/map">
+          <Link className="transition-colors hover:text-orange-500" href="/map">
             Карта
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="transition-colors hover:text-orange-500" href="/">
+          <Link className="transition-colors hover:text-orange-500" href="/">
             Криптовалюта
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className="transition-colors hover:text-orange-500"
             href="/partnership"
           >
             Партнерство
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="transition-colors hover:text-orange-500" href="/we">
+          <Link className="transition-colors hover:text-orange-500" href="/we">
             Хто Ми
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="flex items-center gap-4">
